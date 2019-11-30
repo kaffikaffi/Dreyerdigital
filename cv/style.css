@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body p, body .side-bar #about-filling, .side-bar body #about-filling {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.wrapper {
+  margin: auto 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: row;
+      -ms-flex: row;
+          flex: row;
+  -webkit-box-shadow: 2px 2px 30px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 30px 3px rgba(0, 0, 0, 0.4);
+}
+
+.side-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #34395F;
+  width: 370px;
+  color: #B4BAC6;
+}
+
+.side-bar .side-bar-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.side-bar .side-bar-header {
+  margin-left: 10%;
+  margin-top: 15%;
+}
+
+.side-bar #about-filling {
+  margin: auto 10%;
+}
+
+.side-bar #abilities {
+  margin: 0;
+}
+
+.side-bar .ability-name {
+  text-align: center;
+}
+
+.side-bar .bar-background {
+  margin: auto;
+  width: 80%;
+  background-color: white;
+  height: 1em;
+}
+
+.side-bar .bar-background .progress {
+  background-color: #C0AA96;
+  height: 1em;
+}
+
+.side-bar .contact-table {
+  margin: auto 10%;
+  width: 100%;
+}
+
+.side-bar .contact-table td {
+  padding-right: 2.3em;
+}
+
+.side-bar .contact-table .info-link {
+  text-decoration: none;
+  color: #C0AA96;
+}
+
+.main {
+  background-color: white;
+}
+
+.main #header #main-header {
+  margin-top: 1.6em;
+  font-size: 4em;
+  text-align: center;
+  color: black;
+}
+
+.main #header .bottom-border {
+  width: 80%;
+  margin: auto;
+  border-bottom: solid 2px #C0AA96;
+}
+
+.main .section-header {
+  margin-top: 15%;
+  margin-bottom: 7%;
+  font-size: 1.5em;
+  text-align: center;
+  color: #C0AA96;
+}
+
+.main .container-ul {
+  margin: auto 5%;
+  list-style: none;
+}
+
+.main .container-ul .header-text {
+  font-size: 1.5em;
+}
+
+.main .container-ul .header-text::before {
+  color: #C0AA96;
+  content: "\2022";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.main .period-p {
+  color: #C0AA96;
+  font-style: italic;
+}
+
+.main #school-container {
+  margin-bottom: 10%;
+}
+/*# sourceMappingURL=style.css.map */
