@@ -20,7 +20,7 @@ let working_experience = [
         priority: 70
     },
     job3 = {
-        name: "Linjeforeningen Online",
+        name: "Dotkom",
         title: "Komiteemedlem",
         place: "Trondheim",
         period: "Høst 2019 - d.d",
@@ -48,7 +48,9 @@ function renderArray(array,place) {
         header.className = "header-container";
         let h2 = document.createElement("h2");
         h2.className = "header-text";
-        h2.textContent = element.title;
+        h2.textContent = `${element.title}
+        ${element.name}
+        `;
         /*
         let img = document.createElement("img");
         img.className = "job-logo";
@@ -78,7 +80,7 @@ renderArray(sortedJobs,job_ul)
 let education = [
     school1 = {
         title: "Studiespesialisering",
-        school: "frogn VGS",
+        name: "frogn VGS",
         place: "Drøbak",
         period: "2014 - 2017",
         logo: "img/frogn.png",
@@ -87,16 +89,16 @@ let education = [
     },
     school2 = {
         title: "Matteknologi",
-        school: "NTNU",
+        name: "NTNU",
         place: "Trondheim",
         period: "2018 - 2019",
         logo: "img/NTNU.png",
         alt: "NTNU logo",
-        descreption: "Gikk ett år på bachelor matteknolgi",
+        descreption: "Gikk ett år på bachelor matteknologi",
     },
     school3 = {
         title: "Informatikk",
-        school: "NTNU",
+        name: "NTNU",
         place: "Trondheim",
         period: "2019 - d.d",
         logo: "img/NTNU.png",
@@ -105,7 +107,7 @@ let education = [
     },
     school4={
         title: "Sportsfiske",
-        school: "Sund folkehøgskole",
+        name: "Sund folkehøgskole",
         place: "Inderøy",
         period: "2017 - 2018",
         logo: "img/sund.png",

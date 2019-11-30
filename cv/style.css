@@ -4,7 +4,7 @@ body {
 }
 
 body p, body .side-bar #about-filling, .side-bar body #about-filling {
-  font-size: 1.1em;
+  font-size: 1.04em;
   line-height: 1.5em;
 }
 
@@ -29,7 +29,7 @@ body p, body .side-bar #about-filling, .side-bar body #about-filling {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #34395F;
-  width: 370px;
+  width: 373px;
   color: #B4BAC6;
 }
 
@@ -50,11 +50,11 @@ body p, body .side-bar #about-filling, .side-bar body #about-filling {
 
 .side-bar .side-bar-header {
   margin-left: 10%;
-  margin-top: 15%;
 }
 
 .side-bar #about-filling {
   margin: auto 10%;
+  text-align: justify;
 }
 
 .side-bar #abilities {
@@ -97,7 +97,7 @@ body p, body .side-bar #about-filling, .side-bar body #about-filling {
 
 .main #header #main-header {
   margin-top: 1.6em;
-  font-size: 4em;
+  font-size: 3.8em;
   text-align: center;
   color: black;
 }
@@ -117,8 +117,9 @@ body p, body .side-bar #about-filling, .side-bar body #about-filling {
 }
 
 .main .container-ul {
-  margin: auto 5%;
+  margin: auto 10%;
   list-style: none;
+  padding-left: 0;
 }
 
 .main .container-ul .header-text {
@@ -137,6 +138,7 @@ body p, body .side-bar #about-filling, .side-bar body #about-filling {
 .main .period-p {
   color: #C0AA96;
   font-style: italic;
+  margin-top: 0.5em;
 }
 
 .main #school-container {
