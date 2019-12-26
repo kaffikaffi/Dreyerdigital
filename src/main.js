@@ -1,5 +1,5 @@
 let working_experience = [
-    job1 = {
+    {
         name: "MENY",
         title: "Butikkmedarbeider",
         place: "Drøbak",
@@ -9,7 +9,7 @@ let working_experience = [
         descreption: "Jobbet som lager- og kassemedarbeider i 3 år mens jeg gikk på videregående. Hadde stengeansvar og varierte arbeidsoppgaver rundt i butikken.",
         priority: 80
     },
-    job2 = {
+    {
         name: "Nordisk Fiskeutstyr",
         title: "Salgsmedarbeider",
         place: "Lysaker",
@@ -19,7 +19,7 @@ let working_experience = [
         descreption: "Var sesongansatt og drev stort sett med salg av fiskeutstyr og var til hjelp for kunder i butikk, over telefon og e-post.",
         priority: 70
     },
-    job3 = {
+    {
         name: "Dotkom",
         title: "Komiteemedlem",
         place: "Trondheim",
@@ -32,7 +32,7 @@ let working_experience = [
 ];
 
 const compare = (a,b) => (a.priority > b.priority ? -1 : b.priority > a.priority ? 1 : 0);
-let sortedJobs = working_experience.sort(compare)
+const sortedJobs = working_experience.sort(compare)
 sortedJobs.length = 3; //How many jobs that are showing
 
 function renderArray(array,place) {
@@ -77,8 +77,8 @@ function renderArray(array,place) {
 const job_ul = document.getElementById("experience-list");
 renderArray(sortedJobs,job_ul)
 
-let education = [
-    school1 = {
+const education = [
+    {
         title: "Studiespesialisering",
         name: "frogn VGS",
         place: "Drøbak",
@@ -87,7 +87,7 @@ let education = [
         alt: "frogn logo",
         descreption: "Studiespesialisering med realfag",
     },
-    school2 = {
+    {
         title: "Matteknologi",
         name: "NTNU",
         place: "Trondheim",
@@ -96,7 +96,7 @@ let education = [
         alt: "NTNU logo",
         descreption: "Gikk ett år på bachelor matteknologi",
     },
-    school3 = {
+    {
         title: "Informatikk",
         name: "NTNU",
         place: "Trondheim",
@@ -105,7 +105,7 @@ let education = [
         alt: "NTNU logo",
         descreption: "3-åring bachelor",
     },
-    school4={
+    {
         title: "Sportsfiske",
         name: "Sund folkehøgskole",
         place: "Inderøy",

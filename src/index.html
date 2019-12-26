@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="no-bm">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.scss" />
+    <title>CV</title>
+  </head>
+
+  <body>
+    <div id="wrap" class="wrapper">
+      <div id="side-bar" class="side-bar">
+        <img
+          src="./img/profile-pic.jpeg"
+          width="373"
+          height="537"
+          alt="picture of me"
+          id="profile-pic"
+        />
+        <div class="side-bar-wrapper">
+          <section id="about">
+            <header>
+              <h2 id="about-header" class="side-bar-header">Om</h2>
+            </header>
+            <div id="about-filling" class="side-bar-info">
+              <p>
+                Jeg studerer bachelor i informatikk ved NTNU i Trondheim. Ved
+                siden har jeg deltidsjobb og verv i Drift og utviklingskomiteen
+                til linjeforeningen Online. Er ellers veldig interessert i nye
+                programmeringsspråk, nye løsninger, og nye utfordringer.
+              </p>
+              <p>
+                Ved siden av skole, jobb og verv driver jeg for det meste med
+                friluftsliv, fiske, trening og å være sosial.
+              </p>
+            </div>
+          </section>
+          <section id="abilities">
+            <header>
+              <h2 class="side-bar-header">Ferdigheter</h2>
+            </header>
+            <div id="chart-container">
+              <p class="ability-name">Javascript</p>
+              <div class="bar-background">
+                <div class="progress" style="width: 90%;"></div>
+              </div>
+
+              <p class="ability-name">HTML5</p>
+              <div class="bar-background">
+                <div class="progress" style="width: 70%;"></div>
+              </div>
+
+              <p class="ability-name">CSS & SCSS</p>
+              <div class="bar-background">
+                <div class="progress" style="width: 60%;"></div>
+              </div>
+
+              <p class="ability-name">React</p>
+              <div class="bar-background">
+                <div class="progress" style="width: 25%;"></div>
+              </div>
+
+              <p class="ability-name">Python</p>
+              <div class="bar-background">
+                <div class="progress" style="width: 20%;"></div>
+              </div>
+
+              <p class="ability-name">Linux</p>
+              <div class="bar-background">
+                <div class="progress" style="width: 20%;"></div>
+              </div>
+            </div>
+          </section>
+          <section id="contact">
+            <div id="contact-info">
+              <header>
+                <h2 class="side-bar-header">Kontakt</h2>
+              </header>
+              <table class="contact-table">
+                <tr>
+                  <td>E-post</td>
+                  <td>
+                    <a href="mailto: borge.dreyer@gmail.com" class="info-link"
+                      >borge.dreyer@gmail.com</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mobil</td>
+                  <td>+47 95 22 27 71</td>
+                </tr>
+                <tr>
+                  <td>LinkedIn</td>
+                  <td>
+                    <a
+                      href="https://www.linkedin.com/in/borgesd/"
+                      class="info-link"
+                      >linkedin.com/in/borgesd/</a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>GitHub</td>
+                  <td>
+                    <a href="https://github.com/kaffikaffi" class="info-link"
+                      >github.com/kaffikaffi</a
+                    >
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </section>
+        </div>
+      </div>
+      <main id="main" class="main">
+        <header id="header">
+          <h1 id="main-header">Børge Sørensen Dreyer</h1>
+          <div class="bottom-border"></div>
+        </header>
+        <section id="work-container">
+          <header class="section-header">
+            <h2>Arbeidserfaring</h2>
+          </header>
+          <ul id="experience-list" class="container-ul"></ul>
+        </section>
+        <section id="school-container">
+          <header class="section-header">
+            <h2>Utdanning</h2>
+          </header>
+          <ul id="school-ul" class="container-ul"></ul>
+        </section>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
