@@ -1,123 +1,121 @@
-$primary: #34395F;
-$primary-lighter: #B4BAC6;
-$primary-green: #C5CE82;
-$primary-brown: #C0AA96;
-$primary-pink: #E5BAB7;
+$primary: #34395f;
+$primary-lighter: #b4bac6;
+$primary-green: #c5ce82;
+$primary-brown: #c0aa96;
+$primary-pink: #e5bab7;
 $image-width: 373px;
 $bar-height: 1em;
 
-body{
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    p{
-        font-size: 1.04em;
-        line-height: 1.5em;
-    }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  p {
+    font-size: 1.04em;
+    line-height: 1.5em;
+  }
 }
-.wrapper{
-    margin: auto 20%;
-    display: flex;
-    flex: row;
-    box-shadow:  2px 2px 30px 3px rgba(0, 0, 0, 0.4);
+.wrapper {
+  margin: auto 20%;
+  display: flex;
+  flex: row;
+  box-shadow: 2px 2px 30px 3px rgba(0, 0, 0, 0.4);
 }
 
-.side-bar{
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  background-color: $primary;
+  width: $image-width;
+  color: $primary-lighter;
+  .side-bar-wrapper {
     display: flex;
     flex-direction: column;
-    background-color: $primary;
-    width: $image-width;
-    color: $primary-lighter;
-    .side-bar-wrapper{
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-        justify-content: space-around;
-
-    }
-    .side-bar-header{
-        margin-left: 10%;
-    }
-    #about-filling{
+    flex-grow: 1;
+    justify-content: space-around;
+  }
+  .side-bar-header {
+    margin-left: 10%;
+  }
+  #about-filling {
     @extend p;
-       margin: auto 10%;
-       text-align: justify;
-       //word-break: break-all;
-       //word-break: break-all;
-    }
-    #abilities{
-        margin: 0;
-    }
-    .ability-name{
-        text-align: center;
-    }
-    .bar-background{
-        margin: auto;
-        width: 80%;
-        background-color: white;
-        height: $bar-height;
-        .progress{
-            background-color: $primary-brown;
-            height: $bar-height;
-        }
-    }
-    .contact-table{
-        margin: auto 10%;
-        width: 100%;
-        td{
-            padding-right:2.3em ;
-        }
-        .info-link{
-            text-decoration: none;
-            color: $primary-brown;
-        }
-    }
-    
-}
-.main{
+    margin: auto 10%;
+    text-align: justify;
+    //word-break: break-all;
+    //word-break: break-all;
+  }
+  #abilities {
+    margin: 0;
+  }
+  .ability-name {
+    text-align: center;
+  }
+  .bar-background {
+    margin: auto;
+    width: 80%;
     background-color: white;
-   #header{
-       #main-header{
-           margin-top: 1.6em;
-           font-size: 3.8em;
-           text-align: center;
-           color: black;
-       }
-       .bottom-border{
-           width: 80%;
-           margin: auto;
-           border-bottom: solid 2px $primary-brown;
-       }
-   } 
-    .section-header{
-        margin-top: 15%;
-        margin-bottom: 7%;
-        font-size: 1.5em;
-        text-align: center;
+    height: $bar-height;
+    .progress {
+      background-color: $primary-brown;
+      height: $bar-height;
+    }
+  }
+  .contact-table {
+    margin: auto 10%;
+    width: 100%;
+    td {
+      padding-right: 2.3em;
+    }
+    .info-link {
+      text-decoration: none;
+      color: $primary-brown;
+    }
+  }
+}
+.main {
+  background-color: white;
+  #header {
+    #main-header {
+      margin-top: 1.6em;
+      font-size: 3.8em;
+      text-align: center;
+      color: black;
+    }
+    .bottom-border {
+      width: 80%;
+      margin: auto;
+      border-bottom: solid 2px $primary-brown;
+    }
+  }
+  .section-header {
+    margin-top: 15%;
+    margin-bottom: 7%;
+    font-size: 1.5em;
+    text-align: center;
+    color: $primary-brown;
+  }
+  .container-ul {
+    margin: auto 10%;
+    list-style: none;
+    padding-left: 0;
+    .header-text {
+      font-size: 1.5em;
+      &::before {
         color: $primary-brown;
-
+        content: "\2022";
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
     }
-    .container-ul{
-        margin: auto 10%;
-        list-style: none;
-        padding-left: 0;
-        .header-text{
-            font-size: 1.5em;
-        &::before{
-                    color: $primary-brown;
-                    content: "\2022";
-                    font-weight: bold;
-                    display: inline-block;
-                    width: 1em;
-                    margin-left: -1em;
-            }
-        }
-    }
-    .period-p{
-        color: $primary-brown;
-        font-style: italic;
-        margin-top: 0.5em;
-    }
-    #school-container{
-        margin-bottom: 10%;
-    }
+  }
+  .period-p {
+    color: $primary-brown;
+    font-style: italic;
+    margin-top: 0.5em;
+  }
+  #school-container {
+    margin-bottom: 10%;
+  }
 }
