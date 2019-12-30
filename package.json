@@ -4,7 +4,8 @@
   "description": "A repository for my personal portfolio with a purpose of collecting my small hobby-projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/index.html && docker build -t cv . && docker run -p 8080:80 cv"
   },
   "repository": {
     "type": "git",
