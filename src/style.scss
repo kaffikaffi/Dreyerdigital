@@ -141,6 +141,9 @@ body {
   }
 }
 @media only screen and (max-width: 820px) {
+  html {
+    overflow-x: hidden;
+  }
   .wrapper {
     margin: auto 0;
     flex-direction: column;
@@ -151,8 +154,8 @@ body {
     padding-bottom: 10%;
     .pb-container {
       position: relative;
-      width: 400px;
-      height: 400px;
+      width: 350px;
+      height: 350px;
       overflow: hidden;
       border-radius: 50%;
       align-self: center;
