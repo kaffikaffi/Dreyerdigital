@@ -29,7 +29,7 @@ let working_experience = [
     logo: "img/online.png",
     alt: "online-ikon logo",
     descreption:
-      "Drift- og utviklingskomiteen (dotkom) er ansvarlig for nettsiden og driften rundt systemene til <a href='www.online.ntnu.no'>online.ntnu.no</a>. Som komitemedlem/utvikler i dotkom er man med på å forbedre og utvikle tjenestene på weben. Teknologiene som blir brukt nå er for det meste Django, men vi jobber med en ny versjon av siden i React. For tiden jobber jeg på et komponent-bibliotek i React/typescript. ",
+      "Drift- og utviklingskomiteen (dotkom) er ansvarlig for nettsiden og driften rundt systemene til online.ntnu.no. Som komitemedlem/utvikler i dotkom er man med på å forbedre og utvikle tjenestene på weben. Teknologiene som blir brukt nå er for det meste Django, men vi jobber med en ny versjon av siden i React. For tiden jobber jeg på et komponent-bibliotek i React/typescript. ",
     priority: 100
   }
 ];
