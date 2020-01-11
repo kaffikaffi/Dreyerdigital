@@ -59,8 +59,26 @@ function showCategory() {
 showCategory();
 function filterByCategory(e) {
   let target_element = e.target.id;
-  category_sort = sortedJobs.filter(element => element.category.target_element);
-  console.log(category_sort);
+  category_sort = [];
+  sortedJobs.forEach(element => {
+    element.category.forEach(category_element => {
+      if (target_element == category_element) {
+        category_sort.push(element);
+      }
+    });
+  });
+
+  if (category_sort.length > 0) {
+    clearUl(job_ul);
+    renderArray(category_sort, job_ul);
+  } else if (target_element == "everything") {
+    clearUl(job_ul);
+    renderArray(sortedJobs, job_ul);
+  }
+  return category_sort;
+}
+function clearUl(ul) {
+  ul.textContent = "";
 }
 function renderArray(array, place) {
   array.forEach(element => {
@@ -142,5 +160,5 @@ const education = [
 ];
 
 const school_ul = document.getElementById("school-ul");
-sortedJobs.length = 3; //How many jobs that are showing
+sortedJobs.length = 3; //How many jobs that are showing // maybe just use this when the page is loading for the first time. have a function that resets the filter.
 renderArray(education, school_ul);
