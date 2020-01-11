@@ -100,8 +100,28 @@ body {
     text-align: center;
     color: $primary-brown;
   }
+  #experience-filter {
+    #experience-filter-ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      margin-top: 1%;
+      li {
+        text-align: center;
+        color: $primary;
+        flex: 1;
+        border-bottom: 0.09em solid transparent;
+      }
+      li:hover {
+        font-size: 1.06em;
+        border-bottom: none;
+        //transition-duration: 50ms;
+      }
+    }
+  }
   .container-ul {
-    margin: auto 10%;
+    margin: 2em 10%;
+    //margin: auto 10%;
     list-style: none;
     padding-left: 0;
     .header-text {
@@ -169,6 +189,23 @@ body {
         width: 100%;
         height: auto;
         margin-top: -20px;
+      }
+    }
+  }
+  .main {
+    #experience-filter {
+      #experience-filter-ul {
+        flex-direction: column;
+        padding: 0;
+        li {
+          line-height: 2;
+          border-bottom: 0.09em solid transparent;
+        }
+        li:hover {
+          font-size: 1.06em;
+          border-bottom: none;
+          //transition-duration: 50ms;
+        }
       }
     }
   }
