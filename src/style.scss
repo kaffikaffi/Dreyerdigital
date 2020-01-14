@@ -94,7 +94,7 @@ body {
     }
   }
   .section-header {
-    margin-top: 15%;
+    margin-top: 12%;
     margin-bottom: 7%;
     font-size: 1.5em;
     text-align: center;
@@ -107,15 +107,14 @@ body {
       flex-direction: row;
       margin-top: 1%;
       li {
+        font-size: 1.06em;
         text-align: center;
         color: $primary;
         flex: 1;
-        border-bottom: 0.09em solid transparent;
       }
       li:hover {
-        font-size: 1.06em;
-        border-bottom: none;
-        //transition-duration: 50ms;
+        color: $primary-brown;
+        transition-duration: 70ms;
       }
     }
   }
@@ -198,13 +197,12 @@ body {
         flex-direction: column;
         padding: 0;
         li {
+          font-size: 1.06em;
           line-height: 2;
-          border-bottom: 0.09em solid transparent;
         }
         li:hover {
-          font-size: 1.06em;
-          border-bottom: none;
-          //transition-duration: 50ms;
+          color: $primary-brown;
+          transition-duration: 70ms;
         }
       }
     }
