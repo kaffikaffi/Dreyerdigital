@@ -92,9 +92,8 @@ function renderArray(array, place) {
     header.className = "header-container";
     let h2 = document.createElement("h2");
     h2.className = "header-text";
-    h2.textContent = `${element.title}
-    ${element.name}
-    `; //uncomment when pictures are added to img. //header.appendChild(img)
+    h2.textContent = `${element.title} - ${element.name}`;
+    //uncomment when pictures are added to img. //header.appendChild(img)
     /*
     let img = document.createElement("img");
     img.className = "job-logo";
@@ -123,21 +122,23 @@ renderArray(sortedJobs, job_ul);
 const education = [
   {
     title: "Informatikk",
-    name: "NTNU",
+    name: "NTNU Trondheim",
     place: "Trondheim",
     period: "2019 - d.d",
     logo: "img/NTNU.png",
     alt: "NTNU logo",
-    descreption: "3-åring bachelor"
+    descreption:
+      "Informatikk er en 3-åring bachelor. Linja har en mye prosjektarbeid/gruppesammarbeid og vi programmerer masse i løpet av studiet."
   },
   {
     title: "Matteknologi",
-    name: "NTNU",
+    name: "NTNU Trondheim",
     place: "Trondheim",
     period: "2018 - 2019",
     logo: "img/NTNU.png",
     alt: "NTNU logo",
-    descreption: "Gikk ett år på bachelor matteknologi"
+    descreption:
+      "Gikk ett år på bachelor matteknologi. Året på matteknologi ga meg mye kunnskap om matproduksjon, utfordringene i matbransjen, og en god forståelse av mat generelt."
   },
   {
     title: "Sportsfiske",
@@ -146,7 +147,8 @@ const education = [
     period: "2017 - 2018",
     logo: "img/sund.png",
     alt: "Sund logo",
-    descreption: "Ett år på folkehøgskole på linjen sportsfiske."
+    descreption:
+      "Ett år på folkehøgskole på linjen sportsfiske. Innebar mange forskjellige typer fiske både i havet, ferskvann og i elv. Var ofte på tur, sov mye ute, og lært utrolig mye om natur og miljø. "
   },
   {
     title: "Studiespesialisering",
