@@ -122,13 +122,13 @@ renderArray(sortedJobs, job_ul);
 
 const education = [
   {
-    title: "Studiespesialisering",
-    name: "frogn VGS",
-    place: "Drøbak",
-    period: "2014 - 2017",
-    logo: "img/frogn.png",
-    alt: "frogn logo",
-    descreption: "Studiespesialisering med realfag"
+    title: "Informatikk",
+    name: "NTNU",
+    place: "Trondheim",
+    period: "2019 - d.d",
+    logo: "img/NTNU.png",
+    alt: "NTNU logo",
+    descreption: "3-åring bachelor"
   },
   {
     title: "Matteknologi",
@@ -140,15 +140,6 @@ const education = [
     descreption: "Gikk ett år på bachelor matteknologi"
   },
   {
-    title: "Informatikk",
-    name: "NTNU",
-    place: "Trondheim",
-    period: "2019 - d.d",
-    logo: "img/NTNU.png",
-    alt: "NTNU logo",
-    descreption: "3-åring bachelor"
-  },
-  {
     title: "Sportsfiske",
     name: "Sund folkehøgskole",
     place: "Inderøy",
@@ -156,9 +147,18 @@ const education = [
     logo: "img/sund.png",
     alt: "Sund logo",
     descreption: "Ett år på folkehøgskole på linjen sportsfiske."
+  },
+  {
+    title: "Studiespesialisering",
+    name: "frogn VGS",
+    place: "Drøbak",
+    period: "2014 - 2017",
+    logo: "img/frogn.png",
+    alt: "frogn logo",
+    descreption: "Studiespesialisering med realfag"
   }
 ];
 
 const school_ul = document.getElementById("school-ul");
-sortedJobs.length = 3; //How many jobs that are showing // maybe just use this when the page is loading for the first time. have a function that resets the filter.
+sortedJobs.length = 3; //How many jobs that are showing
 renderArray(education, school_ul);
