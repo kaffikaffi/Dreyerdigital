@@ -148,7 +148,7 @@ const education = [
     logo: "img/sund.png",
     alt: "Sund logo",
     descreption:
-      "Ett år på folkehøgskole på linjen sportsfiske. Innebar mange forskjellige typer fiske både i havet, ferskvann og i elv. Var ofte på tur, sov mye ute, og lært utrolig mye om natur og miljø. "
+      "Ett år på folkehøgskole på linjen sportsfiske. Innebar mange forskjellige typer fiske både i havet, ferskvann og i elv. Var ofte på tur, sov mye ute, og lærte utrolig mye om natur og miljø. "
   },
   {
     title: "Studiespesialisering",
