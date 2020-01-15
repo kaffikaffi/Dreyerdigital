@@ -1,3 +1,5 @@
 dist/
 .cache/
 node_modules/
+/nginx-certbot/data/certbot/
+
