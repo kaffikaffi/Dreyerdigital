@@ -25,7 +25,7 @@ let working_experience = [
   },
   {
     name: "Dotkom",
-    title: "Komiteemedlem",
+    title: "Økonomiansvarlig",
     place: "Trondheim",
     period: "Høst 2019 - d.d",
     logo: "img/online.png",
