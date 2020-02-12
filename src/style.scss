@@ -47,8 +47,6 @@ body {
     @extend p;
     margin: auto 10%;
     text-align: justify;
-    //word-break: break-all;
-    //word-break: break-all;
   }
   #abilities {
     margin: 0;
@@ -69,6 +67,7 @@ body {
   .contact-table {
     margin: auto 10%;
     width: 100%;
+    padding-bottom: 0.1em;
     td {
       padding-right: 2.3em;
     }

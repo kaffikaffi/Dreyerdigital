@@ -93,13 +93,12 @@ function renderArray(array, place) {
     let h2 = document.createElement("h2");
     h2.className = "header-text";
     h2.textContent = `${element.title} - ${element.name}`;
+    header.appendChild(h2);
     //uncomment when pictures are added to img. //header.appendChild(img)
     /*
     let img = document.createElement("img");
     img.className = "job-logo";
-    img.src = element.logo;*/ header.appendChild(
-      h2
-    );
+    img.src = element.logo;*/
 
     let from_to = document.createElement("p");
     from_to.className = "period-p";
