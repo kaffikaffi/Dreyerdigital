@@ -33,19 +33,32 @@ let working_experience = [
     descreption:
       "Drift- og utviklingskomiteen (dotkom) er ansvarlig for nettsiden og driften rundt systemene til online.ntnu.no. Som komitemedlem/utvikler i dotkom er man med på å forbedre og utvikle tjenestene på weben. Teknologiene som blir brukt nå er for det meste Django, men vi jobber med en ny versjon av siden i React. For tiden jobber jeg på et komponent-bibliotek i React/typescript. ",
     category: ["programming_experience"],
+    priority: 90
+  },
+  {
+    name: "Junior Consulting",
+    title: "Konsulent",
+    place: "Trondheim",
+    period: "Vår 2020 - d.d",
+    logo: "img/jr.png",
+    alt: "online-ikon logo",
+    descreption:
+      "Tech-konsulent i Junior Consulting som er et konsulentselskap drevet av NTNU-studenter",
+    category: ["programming_experience"],
     priority: 100
   }
 ];
+
+const compare = (a, b) =>
+  a.priority > b.priority ? -1 : b.priority > a.priority ? 1 : 0;
+const sortedJobs = working_experience.sort(compare);
+sortedJobs.length = 3; //How many jobs that are showing
 
 const categories = {
   programming_experience: "programmeringserfaring",
   sales_experience: "salgserfaring",
   everything: "all erfaring"
 };
-const compare = (a, b) =>
-  a.priority > b.priority ? -1 : b.priority > a.priority ? 1 : 0;
-const sortedJobs = working_experience.sort(compare);
-
 function showCategory() {
   const experience_ul = document.getElementById("experience-filter-ul");
   for (i in categories) {
@@ -57,9 +70,10 @@ function showCategory() {
   }
 }
 showCategory();
+
 function filterByCategory(e) {
   let target_element = e.target.id;
-  category_sort = [];
+  const category_sort = [];
   sortedJobs.forEach(element => {
     element.category.forEach(category_element => {
       if (target_element == category_element) {
@@ -161,5 +175,4 @@ const education = [
 ];
 
 const school_ul = document.getElementById("school-ul");
-sortedJobs.length = 3; //How many jobs that are showing
 renderArray(education, school_ul);
