@@ -41,7 +41,7 @@ let working_experience = [
     place: "Trondheim",
     period: "Vår 2020 - d.d",
     logo: "img/jr.png",
-    alt: "online-ikon logo",
+    alt: "Junior consulting ikon logo",
     descreption:
       "Tech-konsulent i Junior Consulting som er et konsulentselskap drevet av NTNU-studenter",
     category: ["programming_experience"],
@@ -52,7 +52,7 @@ let working_experience = [
 const compare = (a, b) =>
   a.priority > b.priority ? -1 : b.priority > a.priority ? 1 : 0;
 const sortedJobs = working_experience.sort(compare);
-sortedJobs.length = 3; //How many jobs that are showing
+sortedJobs.length = 4; //How many jobs that are showing
 
 const categories = {
   programming_experience: "programmeringserfaring",
