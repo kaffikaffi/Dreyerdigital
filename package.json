@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/kaffikaffi/Dreyerdigital#readme",
   "devDependencies": {
-    "sass": "^1.24.0"
+    "sass": "^1.26.10"
   }
 }
